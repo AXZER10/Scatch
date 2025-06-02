@@ -2,14 +2,14 @@ const mongoose = require('mongoose')
 
 const productSchema = mongoose.Schema({
     name: {
-        typeof: String,
+        type: String,
         minlength: 3,
         trim: true
     },
     price: Number,
     isAdmin: Boolean,
     discount: {
-        typeof: Number,
+        type: Number,
         default: 0
     },
     bgcolor: String,

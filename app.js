@@ -4,6 +4,7 @@ const path = require('path')
 const fs = require('fs')
 // const userModel = require('./models/user-model')
 const db = require('./config/mongoose-connection');
+require('dotenv').config();
 
 const ownersRouter = require('./routes/ownersRouter')
 const productsRouter = require('./routes/productsRouter')

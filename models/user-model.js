@@ -2,19 +2,19 @@ const mongoose = require('mongoose')
 
 const userSchema = mongoose.Schema({
     name: {
-        typeof: String,
+        type: String,
         minlength: 3,
         trim: true
     },
     email: String,
     password: String,
     cart: {
-        typeof: Array,
+        type: Array,
         default: []
     },
     isAdmin: Boolean,
     orders: {
-        typeof: Array,
+        type: Array,
         default: []
     },
     contact: Number,

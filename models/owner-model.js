@@ -2,14 +2,14 @@ const mongoose = require('mongoose')
 
 const ownerSchema = mongoose.Schema({
     name: {
-        typeof: String,
+        type: String,
         minlength: 3,
         trim: true
     },
     email: String,
     password: String,
     products: {
-        typeof: Array,
+        type: Array,
         default: []
     },
     imageUrl: String,
